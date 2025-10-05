@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: gustavo-gestion-interne-aniekayo
+    env: static
+    buildCommand: ""
+    staticPublishPath: public

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustavo - ANIEK & AYO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(90deg, #FFABAA, #7A2020, #004E89); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 shadow-lg gradient-bg text-white">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="assets/logo-aniek-ayo.png" alt="ANIEK & AYO" class="h-12 w-12 rounded-lg shadow-md">
+        <div>
+          <h1 class="font-bold text-xl">ANIEK & AYO</h1>
+          <p class="text-sm opacity-90">Gustavo</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex space-x-8 font-medium">
+        <a href="#accueil" class="hover:text-yellow-200 transition">Accueil</a>
+        <a href="#services" class="hover:text-yellow-200 transition">Services</a>
+        <a href="#partenaires" class="hover:text-yellow-200 transition">Partenaires</a>
+        <a href="#contact" class="hover:text-yellow-200 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="accueil" class="relative bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl font-bold text-gray-900 leading-tight">Simplifiez vos achats avec <span class="text-[#7A2020]">Gustavo</span></h2>
+        <p class="mt-4 text-gray-700">Une application intuitive pour gérer vos fournisseurs et partenaires en un seul endroit, avec rapidité et efficacité.</p>
+        <div class="mt-6 flex space-x-4">
+          <a href="#partenaires" class="px-6 py-3 bg-[#7A2020] text-white rounded-lg shadow hover:bg-[#004E89] transition">Découvrir</a>
+          <a href="#contact" class="px-6 py-3 bg-white border border-[#7A2020] text-[#7A2020] rounded-lg hover:bg-gray-100 transition">Nous contacter</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -top-6 -left-6 w-72 h-72 bg-[#FFABAA] rounded-full opacity-30 blur-3xl"></div>
+        <img src="assets/logo-aniek-ayo.png" alt="Illustration" class="relative z-10 rounded-xl shadow-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl font-bold text-gray-900">Nos Services</h3>
+        <p class="mt-2 text-gray-600">Des solutions adaptées pour répondre à vos besoins professionnels</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <div class="w-14 h-14 flex items-center justify-center bg-[#FFABAA] rounded-full mb-4">
+            <span class="material-icons text-white">inventory_2</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2">Produits</h4>
+          <p class="text-gray-600">Découvrez notre gamme complète de produits innovants et fiables.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <div class="w-14 h-14 flex items-center justify-center bg-[#7A2020] rounded-full mb-4">
+            <span class="material-icons text-white">support_agent</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2">Accompagnement</h4>
+          <p class="text-gray-600">Un service client dédié pour vous accompagner dans tous vos projets.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+          <div class="w-14 h-14 flex items-center justify-center bg-[#004E89] rounded-full mb-4">
+            <span class="material-icons text-white">visibility</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2">Vision</h4>
+          <p class="text-gray-600">Nous construisons un futur durable grâce à des solutions innovantes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partenaires Section -->
+  <section id="partenaires" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl font-bold text-gray-900">Nos Partenaires</h3>
+        <p class="mt-2 text-gray-600">Cliquez sur un logo pour visiter leur site officiel.</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <a href="#" target="_blank" class="bg-white rounded-xl p-4 shadow hover:shadow-lg transform hover:-translate-y-1 transition flex items-center justify-center h-28">
+          <img src="assets/logo-aniek-ayo.png" alt="Partner 1" class="max-h-16">
+        </a>
+        <a href="#" target="_blank" class="bg-white rounded-xl p-4 shadow hover:shadow-lg transform hover:-translate-y-1 transition flex items-center justify-center h-28">
+          <img src="assets/logo-aniek-ayo.png" alt="Partner 2" class="max-h-16">
+        </a>
+        <a href="#" target="_blank" class="bg-white rounded-xl p-4 shadow hover:shadow-lg transform hover:-translate-y-1 transition flex items-center justify-center h-28">
+          <img src="assets/logo-aniek-ayo.png" alt="Partner 3" class="max-h-16">
+        </a>
+        <a href="#" target="_blank" class="bg-white rounded-xl p-4 shadow hover:shadow-lg transform hover:-translate-y-1 transition flex items-center justify-center h-28">
+          <img src="assets/logo-aniek-ayo.png" alt="Partner 4" class="max-h-16">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-gray-900">Contactez-nous</h3>
+      <p class="mt-4 text-gray-600">info@aniekgroup.com | (+228) 70 59 67 44</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="gradient-bg text-white py-6 mt-10">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p>© 2025 ANIEK & AYO - Gustavo</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-yellow-200 transition">Facebook</a>
+        <a href="#" class="hover:text-yellow-200 transition">LinkedIn</a>
+        <a href="#" class="hover:text-yellow-200 transition">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
